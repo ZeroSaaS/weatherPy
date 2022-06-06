@@ -10,6 +10,7 @@ data = r.json()
 
 #extract 'temp' in 'data' and convert to fahrenheit
 temp = round(((data['data'][0]['temp']) * (9/5)) + 32, 0)
+
 #extract weather 'description' in data
 desc = ""
 desc = data['data'][0]['weather']['description']
